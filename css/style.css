@@ -2,7 +2,6 @@
   max-width: 1154px;
   width: 100%;
   margin: 0 auto;
-  padding: 0 10px;
 }
 
 .header {
@@ -138,7 +137,7 @@
     flex-wrap: wrap;
   }
   .intro__nav-link {
-    width: 100%;
+    width: 80%;
     margin-top: 10px;
     margin-right: 0px;
   }
