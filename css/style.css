@@ -142,10 +142,10 @@
     flex-direction: column;
   }
   .header__title-blue {
-    color: #5a5af5;
+    color: #4287f5;
   }
   .header__title-yellow {
-    color: yellow;
+    color: #e6dc2e;
     margin-top: 10px;
   }
 }
