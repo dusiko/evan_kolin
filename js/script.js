@@ -2,6 +2,7 @@ function copyCardNum(event) {
 	if (event.target.classList.contains('card__num')) {
 		const test = event.target.nextElementSibling
 		test.select()
+		test.blur()
 		document.execCommand("copy")
 		const target = event.target
 		const text = target.innerText
