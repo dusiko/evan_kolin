@@ -83,12 +83,6 @@
 .card__num{
 	text-decoration: underline;
 	cursor: pointer;
-	&-inp{
-		position: absolute;
-		top: -1000px;
-		left: -10000px;
-		opacity: 0;
-	}
 	&:hover{
 		font-weight: bold;
 	}

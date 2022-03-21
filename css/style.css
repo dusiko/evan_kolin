@@ -81,12 +81,6 @@
   text-decoration: underline;
   cursor: pointer;
 }
-.card__num-inp {
-  position: absolute;
-  top: -1000px;
-  left: -10000px;
-  opacity: 0;
-}
 .card__num:hover {
   font-weight: bold;
 }
