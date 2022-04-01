@@ -129,7 +129,9 @@
 
 // video-block (new)
 //======================
-.video-block__inner {}
+.video-block__inner {
+	max-width: 500px;
+}
 
 .video-block__item {
 	position: relative;
@@ -158,6 +160,7 @@
 		background-color: transparent;
 		transform: translate(-50%, -50%);
 		outline: none;
+		cursor: pointer;
 	}
 }
 
@@ -178,6 +181,7 @@
 .video-block__item-button:focus .item-button__shape {
 	fill: #ff0000;
 	fill-opacity: 1;
+	transition: .2s;
 }
 
 .item-button__icon {
@@ -210,75 +214,75 @@
 	font-size: 16px;
 }
 
-@media(max-width: 910px) {
-	.intro__nav {
-		flex-wrap: wrap;
+// @media(max-width: 910px) {
+// 	.intro__nav {
+// 		flex-wrap: wrap;
 
-		&-link {
-			width: 30%;
+// 		&-link {
+// 			width: 30%;
 
-			&:nth-child(2) {
-				margin-right: 0;
-			}
+// 			&:nth-child(2) {
+// 				margin-right: 0;
+// 			}
 
-			&:nth-child(1n+3) {
-				margin-top: 10px;
-			}
-		}
+// 			&:nth-child(1n+3) {
+// 				margin-top: 10px;
+// 			}
+// 		}
 
-	}
-}
+// 	}
+// }
 
-@media(max-width: 800px) {
-	.video-block__item {
-		display: none;
-		flex-basis: 90%;
+// @media(max-width: 800px) {
+// 	.video-block__item {
+// 		display: none;
+// 		flex-basis: 90%;
 
-		&:nth-child(odd) {
-			margin-right: 0;
-		}
+// 		&:nth-child(odd) {
+// 			margin-right: 0;
+// 		}
 
-		&:nth-child(-n+2) {
-			display: flex;
-		}
-	}
+// 		&:nth-child(-n+2) {
+// 			display: flex;
+// 		}
+// 	}
 
-	.header {
-		padding-bottom: 20px;
-	}
+// 	.header {
+// 		padding-bottom: 20px;
+// 	}
 
-	.header__title {
-		display: flex;
-		flex-direction: column;
+// 	.header__title {
+// 		display: flex;
+// 		flex-direction: column;
 
-		&-blue {
-			color: #4287f5
-		}
+// 		&-blue {
+// 			color: #4287f5
+// 		}
 
-		&-yellow {
-			color: #e6dc2e;
-			margin-top: 10px;
-		}
-	}
-}
+// 		&-yellow {
+// 			color: #e6dc2e;
+// 			margin-top: 10px;
+// 		}
+// 	}
+// }
 
-@media(max-width: 425px) {
-	.intro__nav {
-		flex-wrap: wrap;
+// @media(max-width: 425px) {
+// 	.intro__nav {
+// 		flex-wrap: wrap;
 
-		&-link {
-			width: 80%;
-			margin-top: 10px;
-			margin-right: 0px;
-		}
-	}
+// 		&-link {
+// 			width: 80%;
+// 			margin-top: 10px;
+// 			margin-right: 0px;
+// 		}
+// 	}
 
-	.header {
-		padding-bottom: 10px;
+// 	.header {
+// 		padding-bottom: 10px;
 
-		&__title {
-			font-size: 1.2rem;
-		}
-	}
+// 		&__title {
+// 			font-size: 1.2rem;
+// 		}
+// 	}
 
-}
+// }
