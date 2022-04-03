@@ -82,7 +82,6 @@
 	}
 
 	&-link:hover {
-		// border: 2px solid skyblue;
 		background-color: rgb(245, 191, 175);
 		border-color: transparent;
 		color: #444;
@@ -98,34 +97,6 @@
 		font-weight: bold;
 	}
 }
-
-
-/*
-// video-block (old)
-//======================
-.video-block__inner {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-}
-
-.video-block__item {
-	margin-right: 30px;
-	margin-bottom: 30px;
-	flex-basis: 45%;
-	display: flex;
-
-	&-video {
-		flex-basis: 100%;
-		height: 382px;
-	}
-}
-
-.video-block__item:nth-child(even) {
-	margin-right: 0;
-}
-
-*/
 
 // video-block (new)
 //======================
@@ -203,16 +174,6 @@
 .item-button__icon {
 	fill: #fff;
 }
-
-.video-block__item-link {}
-
-.video-block__item-video {}
-
-
-
-
-
-
 
 // footer
 //==================
