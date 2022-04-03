@@ -1,4 +1,4 @@
-window.addEventListener('scroll', showNextVideoByScrollingPage)
+// window.addEventListener('scroll', showNextVideoByScrollingPage)
 document.querySelector('.intro__text-subdonat').addEventListener('click', copyCardNum)
 
 function copyCardNum(event) {
@@ -26,28 +26,31 @@ function copyCardNum(event) {
 /* Show Video by scrolling page
 ======================= */
 
-function showNextVideoByScrollingPage() {
-	const topScrollPixels = window.pageYOffset;
-	if (topScrollPixels > 300 && topScrollPixels < 999) {
-		const videoArr = document.querySelectorAll('.video-block__item')
-		videoArr.forEach((item, i) => {
-			if (i > 1 && i < 4) {
-				item.style.display = "flex"
-			}
-		})
-	} else if (topScrollPixels > 1000) {
-		const videoArr = document.querySelectorAll('.video-block__item')
-		videoArr.forEach((item, i) => {
-			if (i > 3)
-				item.style.display = "flex"
-		})
-		window.removeEventListener('scroll', getPix)
-	}
-}
+// function showNextVideoByScrollingPage() {
+// 	const topScrollPixels = window.pageYOffset;
+// 	if (topScrollPixels > 300 && topScrollPixels < 999) {
+// 		const videoArr = document.querySelectorAll('.video-block__item')
+// 		videoArr.forEach((item, i) => {
+// 			if (i > 1 && i < 4) {
+// 				item.style.display = "flex"
+// 			}
+// 		})
+// 	} else if (topScrollPixels > 1000) {
+// 		const videoArr = document.querySelectorAll('.video-block__item')
+// 		videoArr.forEach((item, i) => {
+// 			if (i > 3)
+// 				item.style.display = "flex"
+// 		})
+// 		window.removeEventListener('scroll', showNextVideoByScrollingPage)
+// 	}
+// }
+
+
+
 
 /* iframe video by click
 ========================== */
-
+/*
 function findVideos() {
 	let videos = document.querySelectorAll('.video-block__item');
 
@@ -100,3 +103,4 @@ function generateURL(id) {
 }
 
 findVideos();
+*/
