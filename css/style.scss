@@ -45,7 +45,7 @@
 }
 
 .intro__text {
-	margin: 25px 0;
+	margin: 25px 10px;
 
 	&-donat {
 		font-family: Arial, Helvetica, sans-serif;
@@ -130,7 +130,19 @@
 // video-block (new)
 //======================
 .video-block__inner {
-	max-width: 500px;
+	margin: 0 10px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 20px;
+}
+
+.video-block__item-title {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	z-index: 1;
+	color: rgba(255, 255, 255, 0.945);
+	font-size: 1rem;
 }
 
 .video-block__item {
@@ -139,6 +151,10 @@
 	height: 0;
 	padding-bottom: 56.25%;
 	background-color: #000;
+
+	&:last-child {
+		margin-bottom: 20px;
+	}
 
 	&-media {
 		position: absolute;
@@ -214,75 +230,74 @@
 	font-size: 16px;
 }
 
-// @media(max-width: 910px) {
-// 	.intro__nav {
-// 		flex-wrap: wrap;
+@media(max-width: 910px) {
+	.intro__nav {
+		flex-wrap: wrap;
 
-// 		&-link {
-// 			width: 30%;
+		&-link {
+			width: 30%;
 
-// 			&:nth-child(2) {
-// 				margin-right: 0;
-// 			}
+			&:nth-child(2) {
+				margin-right: 0;
+			}
 
-// 			&:nth-child(1n+3) {
-// 				margin-top: 10px;
-// 			}
-// 		}
+			&:nth-child(1n+3) {
+				margin-top: 10px;
+			}
+		}
 
-// 	}
-// }
+	}
+}
 
-// @media(max-width: 800px) {
-// 	.video-block__item {
-// 		display: none;
-// 		flex-basis: 90%;
+@media(max-width: 800px) {
+	.header {
+		padding-bottom: 20px;
+	}
 
-// 		&:nth-child(odd) {
-// 			margin-right: 0;
-// 		}
+	.header__title {
+		display: flex;
+		flex-direction: column;
 
-// 		&:nth-child(-n+2) {
-// 			display: flex;
-// 		}
-// 	}
+		&-blue {
+			color: #4287f5
+		}
 
-// 	.header {
-// 		padding-bottom: 20px;
-// 	}
+		&-yellow {
+			color: #e6dc2e;
+			margin-top: 10px;
+		}
+	}
 
-// 	.header__title {
-// 		display: flex;
-// 		flex-direction: column;
+	.video-block__inner {
+		grid-template-columns: 1fr;
+	}
 
-// 		&-blue {
-// 			color: #4287f5
-// 		}
+	.video-block__item-title {
+		font-size: 1.4rem;
+	}
+}
 
-// 		&-yellow {
-// 			color: #e6dc2e;
-// 			margin-top: 10px;
-// 		}
-// 	}
-// }
+@media(max-width: 425px) {
+	.intro__nav {
+		flex-wrap: wrap;
 
-// @media(max-width: 425px) {
-// 	.intro__nav {
-// 		flex-wrap: wrap;
+		&-link {
+			width: 80%;
+			margin-top: 10px;
+			margin-right: 0px;
+		}
+	}
 
-// 		&-link {
-// 			width: 80%;
-// 			margin-top: 10px;
-// 			margin-right: 0px;
-// 		}
-// 	}
+	.header {
+		padding-bottom: 10px;
 
-// 	.header {
-// 		padding-bottom: 10px;
+		&__title {
+			font-size: 1.2rem;
+		}
+	}
 
-// 		&__title {
-// 			font-size: 1.2rem;
-// 		}
-// 	}
+	.video-block__item-title {
+		font-size: 1rem;
+	}
 
-// }
+}

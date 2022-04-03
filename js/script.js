@@ -60,6 +60,7 @@ function setupVideo(video) {
 	let link = video.querySelector('.video-block__item-link')
 	let media = video.querySelector('.video-block__item-media')
 	let button = video.querySelector('.video-block__item-button')
+	let title = video.querySelector('.video-block__item-title')
 	let id = parseMediaURL(media)
 
 	video.addEventListener('click', () => {
@@ -67,6 +68,7 @@ function setupVideo(video) {
 
 		link.remove();
 		button.remove();
+		title.remove();
 		video.appendChild(iframe);
 	});
 
@@ -87,15 +89,20 @@ function createIframe(id) {
 
 	iframe.setAttribute('allowfullscreen', '');
 	iframe.setAttribute('src', generateURL(id));
-	iframe.classList.add('video__media');
+	iframe.classList.add('video-block__item-media');
 
 	return iframe
 }
 
 function generateURL(id) {
-	let query = '?rel=0&showinfo=0&autoplay=1';
-
+	let query = '?rel=1&showinfo=1&autoplay=1';
+	console.log('https://www.youtube.com/embed/' + id + query)
 	return 'https://www.youtube.com/embed/' + id + query;
 }
 
 findVideos();
+
+function getNameVideo() {
+	console.log('https://gdata.youtube.com/feeds/api/videos/TnMKVWAFzek?alt=json&v=2')
+}
+
