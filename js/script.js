@@ -101,8 +101,3 @@ function generateURL(id) {
 }
 
 findVideos();
-
-function getNameVideo() {
-	console.log('https://gdata.youtube.com/feeds/api/videos/TnMKVWAFzek?alt=json&v=2')
-}
-
