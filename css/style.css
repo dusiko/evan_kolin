@@ -43,7 +43,7 @@
 }
 .intro__text-donat {
   font-family: Arial, Helvetica, sans-serif;
-  margin-bottom: 15px;
+  margin: 0 10px 15px;
 }
 .intro__text-subdonat {
   font-style: italic;
