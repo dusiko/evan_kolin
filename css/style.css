@@ -118,6 +118,19 @@
   margin-right: 0;
 }
 
+.video-block__btn {
+  margin-bottom: 30px;
+  padding: 20px 40px;
+  font-size: 20px;
+  background-color: #222121;
+  color: #e7e7e7;
+  cursor: pointer;
+}
+.video-block__btn:hover {
+  transform: scale(110%);
+  transition: .2s;
+}
+
 .footer {
   height: 80px;
   display: flex;

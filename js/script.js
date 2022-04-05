@@ -1,4 +1,3 @@
-// window.addEventListener('scroll', showNextVideoByScrollingPage)
 document.querySelector('.intro__text-subdonat').addEventListener('click', copyCardNum)
 
 function copyCardNum(event) {
@@ -22,85 +21,22 @@ function copyCardNum(event) {
 	}
 }
 
-
-/* Show Video by scrolling page
-======================= */
-
-// function showNextVideoByScrollingPage() {
-// 	const topScrollPixels = window.pageYOffset;
-// 	if (topScrollPixels > 300 && topScrollPixels < 999) {
-// 		const videoArr = document.querySelectorAll('.video-block__item')
-// 		videoArr.forEach((item, i) => {
-// 			if (i > 1 && i < 4) {
-// 				item.style.display = "flex"
-// 			}
-// 		})
-// 	} else if (topScrollPixels > 1000) {
-// 		const videoArr = document.querySelectorAll('.video-block__item')
-// 		videoArr.forEach((item, i) => {
-// 			if (i > 3)
-// 				item.style.display = "flex"
-// 		})
-// 		window.removeEventListener('scroll', showNextVideoByScrollingPage)
-// 	}
-// }
-
-
-
-
-/* iframe video by click
-========================== */
-/*
-function findVideos() {
-	let videos = document.querySelectorAll('.video-block__item');
-
-	for (let i = 0; i < videos.length; i++) {
-		setupVideo(videos[i]);
+function showAllVideo() {
+	const srcArr = ['https://www.youtube.com/embed/0mAsaUGLbbk', 'https://www.youtube.com/embed/d4O2AQ0wrXY', 'https://www.youtube.com/embed/8mSHN9654KE', 'https://www.youtube.com/embed/wziya1qpTtg']
+	const $Parent = document.querySelector('.video-block__inner')
+	$Parent.removeChild(this.event.target)
+	for (let i = 0; i < srcArr.length; i++) {
+		const $div = document.createElement('DIV')
+		$div.classList.add('video-block__item')
+		const $iframe = document.createElement('iframe')
+		$iframe.classList.add('video-block__item-video')
+		$iframe.setAttribute('src', srcArr[i])
+		$iframe.setAttribute('title', 'YouTube video player')
+		$iframe.setAttribute('frameborder', '0')
+		$iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture')
+		$iframe.setAttribute('allowfullscreen', 'allowfullscreen')
+		$div.appendChild($iframe)
+		$Parent.appendChild($div)
 	}
+
 }
-
-function setupVideo(video) {
-	let link = video.querySelector('.video-block__item-link')
-	let media = video.querySelector('.video-block__item-media')
-	let button = video.querySelector('.video-block__item-button')
-	let title = video.querySelector('.video-block__item-title')
-	let id = parseMediaURL(media)
-
-	video.addEventListener('click', () => {
-		let iframe = createIframe(id);
-
-		link.remove();
-		button.remove();
-		title.remove();
-		video.appendChild(iframe);
-	});
-
-	link.removeAttribute('href');
-	video.classList.add('video-block__item--enabled');
-}
-
-function parseMediaURL(media) {
-	let regexp = /https:\/\/i\.ytimg\.com\/vi\/([a-zA-Z0-9_-]+)/i;
-	let url = media.src;
-	let match = url.match(regexp);
-
-	return match[1]
-}
-
-function createIframe(id) {
-	let iframe = document.createElement('iframe')
-
-	iframe.setAttribute('allowfullscreen', '');
-	iframe.setAttribute('src', generateURL(id));
-	iframe.classList.add('video-block__item-media');
-
-	return iframe
-}
-
-function generateURL(id) {
-	let query = "?rel=1&showinfo=1&autoplay=1";
-	return 'https://www.youtube.com/embed/' + id + query;
-}
-
-findVideos();
-*/
