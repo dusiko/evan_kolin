@@ -4,6 +4,8 @@
   margin: 0 auto;
 }
 
+/* header
+===================*/
 .header {
   background-color: #000;
   color: #fff;
@@ -213,7 +215,13 @@
   .video-block__item-video {
     min-height: 200px;
   }
+
+  .video-block__btn {
+    font-size: 12px;
+  }
 }
-/*# sourceMappingURL=style.css.map */
+/*
+# sourceMappingURL=style.css.map 
+*/
 
 /*# sourceMappingURL=style.css.map */
