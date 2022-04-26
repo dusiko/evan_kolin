@@ -22,7 +22,7 @@ function copyCardNum(event) {
 }
 
 function showAllVideo() {
-	const srcArr = ['https://www.youtube.com/embed/0mAsaUGLbbk', 'https://www.youtube.com/embed/d4O2AQ0wrXY', 'https://www.youtube.com/embed/8mSHN9654KE', 'https://www.youtube.com/embed/wziya1qpTtg']
+	const srcArr = ['https://www.youtube.com/embed/0mAsaUGLbbk', 'https://www.youtube.com/embed/d4O2AQ0wrXY', 'https://www.youtube.com/embed/8mSHN9654KE', 'https://www.youtube.com/embed/wziya1qpTtg', 'https://www.youtube.com/embed/TnMKVWAFzek']
 	const $Parent = document.querySelector('.video-block__inner')
 	$Parent.removeChild(this.event.target)
 	for (let i = 0; i < srcArr.length; i++) {
