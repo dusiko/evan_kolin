@@ -217,6 +217,11 @@
 		font-size: 1.2rem;
 	}
 
+	.intro__text-donat {
+		display: flex;
+		flex-direction: column;
+	}
+
 	.video-block__item-video {
 		min-height: 200px;
 	}
