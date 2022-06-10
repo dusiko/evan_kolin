@@ -6,6 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/admin.css">
 	<link rel="stylesheet" href="../css/reset.css">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&family=Open+Sans&display=swap"
 		rel="stylesheet">
@@ -23,11 +24,28 @@
 			</div>
 		</div>
 	</header>
+	<main class="admin">
+		<form>
+			<fieldset>
+				<legend>Добавити нове відео</legend>
+				<label>Назва трека: <input type="text" class="admin__input" placeholder="Колін - Циганський танк"></label>
+				<label>Посилання на трек в ютубі: <input type="text" class="admin__input"
+						placeholder="https://youtu.be/ZovKS1T0XNg"></label>
+				<button type="button">добавити відео</button>
+			</fieldset>
+		</form>
+		<form>
+			<fieldset>
+				<legend>Видалити відео</legend>
+				<ol class="delete__list"></ol>
+			</fieldset>
+		</form>
+	</main>
 
 
 
-
-	<script src="../js/script.js"></script>
+	<script src="../js/data.js"></script>
+	<script src="../js/admin.js"></script>
 </body>
 
 </html>
