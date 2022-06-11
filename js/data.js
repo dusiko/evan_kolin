@@ -1,0 +1,16 @@
+const videoList = [
+	{ title: 'Колін - Душу тіло ложим', src: 'https://www.youtube.com/embed/ZovKS1T0XNg' },
+	{ title: 'Колін - Українка', src: 'https://www.youtube.com/embed/U3kCZVK3Yqw' },
+	{ title: 'Колін - Джавеліно', src: 'https://www.youtube.com/embed/VHziOPE51oI' },
+	{ title: 'Колін - Мама стояла', src: 'https://www.youtube.com/embed/-WLFDPB0mb0' },
+	{ title: 'Колін - Чи не пішов би ти', src: 'https://www.youtube.com/embed/sLNcg4jnyso' },
+	{ title: 'Колін - Циганський танк', src: 'https://www.youtube.com/embed/wziya1qpTtg' },
+	{ title: 'Колін ft. MC PAPA - Х*ярить водку (+18)', src: 'https://www.youtube.com/embed/-8hDSBwHWQ8' },
+	{ title: 'Колін - Мало обіймав (Official Video, 2022)', src: 'https://www.youtube.com/embed/0t39fgE-nns' },
+	{ title: 'Колін - Берегти твій сон', src: 'https://www.youtube.com/embed/CbUNdXFrfWo' },
+	{ title: 'Колін - ЗСУ', src: 'https://www.youtube.com/embed/TnMKVWAFzek' },
+	{ title: 'Колін - Сирена', src: 'https://www.youtube.com/embed/0mAsaUGLbbk' },
+	{ title: 'Колін - Ти на колінах', src: 'https://www.youtube.com/embed/d4O2AQ0wrXY' },
+	{ title: 'Колін - Привид Києва', src: 'https://www.youtube.com/embed/8mSHN9654KE' },
+	{ title: 'Колін - А говорили', src: 'https://www.youtube.com/embed/L5YMOjW5Jdc' },
+]
