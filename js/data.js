@@ -1,4 +1,5 @@
 const videoList = [
+	{ title: 'Колін - А я простий пацан', src: 'https://www.youtube.com/embed/l89QnkLq2DU' },
 	{ title: 'Колін - Душу тіло ложим', src: 'https://www.youtube.com/embed/ZovKS1T0XNg' },
 	{ title: 'Колін - Українка', src: 'https://www.youtube.com/embed/U3kCZVK3Yqw' },
 	{ title: 'Колін - Джавеліно', src: 'https://www.youtube.com/embed/VHziOPE51oI' },
