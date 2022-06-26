@@ -1,24 +1,29 @@
 {
-  "name": "evan_kolin",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/dusiko/evan_kolin.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/dusiko/evan_kolin/issues"
-  },
-  "homepage": "https://github.com/dusiko/evan_kolin#readme",
-  "dependencies": {
-    "express": "^4.18.1",
-    "mongoose": "^6.4.0",
-    "mssql": "^8.1.2"
-  }
+	"name": "evan_kolin",
+	"version": "1.0.0",
+	"description": "",
+	"main": "js/back.js",
+	"scripts": {
+		"start": "node js/back",
+		"dev": "nodemon js/back"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/dusiko/evan_kolin.git"
+	},
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/dusiko/evan_kolin/issues"
+	},
+	"homepage": "https://github.com/dusiko/evan_kolin#readme",
+	"dependencies": {
+		"express": "^4.18.1",
+		"mongodb": "^4.7.0",
+		"mongoose": "^6.4.0",
+		"mssql": "^8.1.2"
+	},
+	"devDependencies": {
+		"nodemon": "^2.0.18"
+	}
 }
