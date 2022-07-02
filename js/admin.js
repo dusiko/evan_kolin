@@ -1,39 +1,3 @@
-const express = require('express')
-const mongodb = require('mongodb')
-const mongoose = require('mongoose')
-
-
-console.log('work')
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-document.querySelector('.delete__list').addEventListener('click', deleteVideo)
-document.querySelector('.btn__add').addEventListener('click', addNewVideo)
 
 function displayVideoList(data) {
 	const list = document.querySelector('.delete__list')
@@ -110,3 +74,9 @@ function formatURL(link) {
 	cut = cut.split('').reverse().join('')
 	return 'https://www.youtube.com/embed/' + cut
 }
+
+
+document.querySelector('.delete__list').addEventListener('click', deleteVideo)
+document.querySelector('.btn__add').addEventListener('click', addNewVideo)
+
+displayVideoList(videoList)
