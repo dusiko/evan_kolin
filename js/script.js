@@ -44,3 +44,9 @@ function fillVideos(playList) {
 }
 
 fillVideos(videoList)
+
+fetch("https://youtube.googleapis.com/youtube/v3/search?key=AIzaSyDvSOvThfonfH5SXNYwsBHEHdaoRTAK508").then(
+	(data) => {
+		console.log(data.json())
+	}
+)
