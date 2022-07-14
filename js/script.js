@@ -20,33 +20,3 @@ function copyCardNum(event) {
 		}
 	}
 }
-
-const videoBlockInner = document.querySelector('.video-block__inner')
-function fillVideos(playList) {
-	playList.forEach(item => {
-		const video = document.createElement('DIV')
-		video.classList.add('video-block__item')
-		const iframe = document.createElement('iframe')
-		iframe.classList.add('video-block__item-video')
-		iframe.setAttribute('title', "YouTube video player")
-		iframe.setAttribute('frameborder', '0')
-		iframe.setAttribute('allow', 'accelerometer')
-		iframe.setAttribute('autoplay', 'autoplay')
-		iframe.setAttribute('clipboard-write', 'clipboard-write')
-		iframe.setAttribute('encrypted-media', 'encrypted-media')
-		iframe.setAttribute('gyroscope', 'gyroscope')
-		iframe.setAttribute('picture-in-picture', 'picture-in-picture')
-		iframe.setAttribute('allowfullscreen', 'allowfullscreen')
-		iframe.setAttribute('src', item.src)
-		video.appendChild(iframe)
-		videoBlockInner.appendChild(video)
-	})
-}
-
-fillVideos(videoList)
-
-fetch("https://youtube.googleapis.com/youtube/v3/search?key=AIzaSyDvSOvThfonfH5SXNYwsBHEHdaoRTAK508").then(
-	(data) => {
-		console.log(data.json())
-	}
-)
